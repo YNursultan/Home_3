@@ -12,15 +12,15 @@
 </head>
 <body>
 
-<form action="" method="post">
-    <select name="item">
-        <option>Sport</option>
-        <option>Furniture</option>
-        <option>Gadgets</option>
-        <option>Clothes</option>
-    </select>
-    <input type="submit">
-</form>
+<%--<form action="" method="post">--%>
+<%--    <select name="item">--%>
+<%--        <option>Sport</option>--%>
+<%--        <option>Furniture</option>--%>
+<%--        <option>Gadgets</option>--%>
+<%--        <option>Clothes</option>--%>
+<%--    </select>--%>
+<%--    <input type="submit">--%>
+<%--</form>--%>
 
 <form action="<%=request.getContextPath()%>/Sport" method="post">
     <input type="submit" value="Sport">

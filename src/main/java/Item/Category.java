@@ -14,7 +14,7 @@ public class Category extends HttpServlet {
         String category = req.getParameter("item");
 
         if (category.equals("Sport")){
-            
+
         }
         else if (category.equals("Furniture")){
 

@@ -8,7 +8,7 @@
     </welcome-file-list>
     <context-param>
         <param-name>path</param-name>
-        <param-value>"C:\Users\Abylay\Assignment_3\src\main\webapp"</param-value>
+        <param-value>"C:\Users\Abylay\StartUp3\src\main\webapp"</param-value>
     </context-param>
 
     <servlet>
