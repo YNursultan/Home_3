@@ -18,7 +18,7 @@
     LinkedList<Product> list = (LinkedList<Product>) request.getAttribute("list");
 %>
 
-<form action="Show" method="post">
+<form action="<%=request.getContextPath()%>/Show" method="post">
     <% for (int a = 0; a < list.size(); a++){%>
     <input type="checkbox" name="items" id="chk1" value="<%=list.get(a).getName()%>">
     <label for="chk1"><%=list.get(a).getName() + " " + list.get(a).getCost()%></label>

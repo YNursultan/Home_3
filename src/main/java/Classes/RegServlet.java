@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegServlet extends HttpServlet {
 
@@ -26,6 +28,11 @@ public class RegServlet extends HttpServlet {
 
         User a = new User(username,password);
         req.setAttribute("key",a);
+
+        Map<Integer,User> map = new HashMap<>();
+        map.put(1,a);
+
+        req.setAttribute("map",map);
         req.getRequestDispatcher("/Login-form.jsp").forward(req,resp);
     }
 }

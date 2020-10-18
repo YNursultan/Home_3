@@ -1,3 +1,4 @@
+<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
 <%--
   Created by IntelliJ IDEA.
   User: Abylay
@@ -35,7 +36,8 @@
     <input type="submit" value="Clothes">
 </form>
 
-
+<%--<c:set var="user" scope="session" value="Sergey" />--%>
+<%--<c:out value="${user}" />--%>
 
 <form method="get" action="<%=request.getContextPath()%>/Logout"><input type="submit" value="Logout"></form>
 

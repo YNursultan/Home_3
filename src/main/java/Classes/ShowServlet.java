@@ -6,6 +6,7 @@ import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
+import java.util.Map;
 
 public class ShowServlet extends HttpServlet {
 
@@ -20,6 +21,9 @@ public class ShowServlet extends HttpServlet {
         int a = cookies[0].getMaxAge();
         int b = session.getMaxInactiveInterval() - (600 - a);
 
+//        Map<Integer,User> map = (Map<Integer, User>) req.getAttribute("map");
+//
+//        printWriter.println("Thanks a lot "+ map.get(1).getUsername());
         printWriter.println("Activity interval "+ session.getMaxInactiveInterval());
         Date creation = new Date(session.getCreationTime());
         printWriter.println("creation time "+ creation +"<br>");
